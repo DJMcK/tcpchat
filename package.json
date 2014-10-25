@@ -1,0 +1,11 @@
+{
+    "name": "tcpchat",
+    "version": "1.0.0",
+    "description": "for the flight :)",
+    "main": "index.js",
+    "author": "David McKeown <david.j.mckeown@us.pwc.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "node ./bin/www"
+    }
+}
