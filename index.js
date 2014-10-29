@@ -29,8 +29,8 @@ var newClient = function (client) {
 		broadcast(data, client);
 	});
 	client.on('end', function () {
-		broadcast(client.name + ' left.\n');
 		clientsConnected.splice(clientsConnected.indexOf(client), 1);
+        broadcast(client.name + ' left.\n');
 	});
 };
 
@@ -47,7 +47,7 @@ var broadcast = function (message, client) {
 			clientsConnected[i].write('>>\n\n');
 		}
 	}
-}
+};
 
 /**
  * Bind to new connections
